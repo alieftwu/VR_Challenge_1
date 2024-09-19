@@ -7672,13 +7672,13 @@ MonoBehaviour:
   sounds:
   - name: final_explosion
     clip: {fileID: 8300000, guid: 716d0e77a393e6c418e96cc81cf9fb20, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    loop: 0
     source: {fileID: 0}
   - name: wormhole
     clip: {fileID: 8300000, guid: f52d28c24d364c2469cd5db487f757c1, type: 3}
     volume: 1
-    pitch: 0
+    loop: 0
     source: {fileID: 0}
 --- !u!4 &1745566504
 Transform:

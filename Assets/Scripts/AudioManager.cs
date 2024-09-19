@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
             s.source.clip = s.clip;
 
             s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
+            //s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
     }
@@ -28,10 +28,14 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
+
+    //for adding all one-time sounds
     void Start()
     {
         // Start the coroutine to play the sound after 35 seconds
         StartCoroutine(PlaySoundAfterDelay("wormhole", 36f));
+
+        StartCoroutine(PlaySoundAfterDelay("final_explosion", 30f));
     }
 
     // Coroutine to play a sound after a specified delay
