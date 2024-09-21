@@ -33,9 +33,17 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         // Start the coroutine to play the sound after 35 seconds
+        StartCoroutine(PlaySoundAfterDelay("beholder_rays", 22f));
+        StartCoroutine(PlaySoundAfterDelay("beholder_rays", 23f));
+
+
         StartCoroutine(PlaySoundAfterDelay("wormhole", 36f));
 
         StartCoroutine(PlaySoundAfterDelay("final_explosion", 30f));
+
+
+        
+
     }
 
     // Coroutine to play a sound after a specified delay
